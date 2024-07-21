@@ -1,50 +1,117 @@
 /* static/style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fafafa;
-    margin: 0;
-    padding: 0;
+  background-color: #fafafa;
+  font-family: Arial, sans-serif;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .left-side {
-    background-color: #f0f0f0;
-    width: 50%;
-    padding: 20px;
+  background: radial-gradient(circle at 30% 110%, #ffdb8b 0%, #ee653d 25%, #d42e81 50%, #a237b6 75%, #3e57bc 100%);
+  width: 50%;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.instagram {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle at 30% 110%, #ffdb8b 0%, #ee653d 25%, #d42e81 50%, #a237b6 75%, #3e57bc 100%);
+  border-radius: 35px;
+  box-shadow: 0px 15px 40px 1px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.instagram::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  border: 8px solid #fff;
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+}
+
+.instagram::before {
+  content: "";
+  position: absolute;
+  top: 49px;
+  right: 49px;
+  border: 8px solid #fff;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+span {
+  position: absolute;
+  display: block;
+  top: 40px;
+  right: 40px;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+p {
+  color: #fff;
+  font-family: "poppins";
+  letter-spacing: 1.2px;
+  font-size: 20px;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  cursor: pointer;
 }
 
 .right-side {
-    width: 50%;
-    padding: 20px;
+  width: 50%;
+  padding: 20px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 input {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 button {
-    padding: 10px;
-    background-color: #0095f6;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px;
+  background-color: #0095f6;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #007bb5;
+  background-color: #007bb5;
+}
+
+a {
+  color: #0095f6;
 }
