@@ -32,11 +32,10 @@ body {
     margin-bottom: 20px;
 }
 
-.logo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: radial-gradient(circle at 30% 110%, #ffdb8b 0%, #ee653d 25%, #d42e81 50%, #a237b6 75%, #3e57bc 100%);
+.instagram-logo {
+    width: 160px;
+    height: auto;
+    border-radius: 10px;
     margin: 0 auto;
 }
 
@@ -56,20 +55,22 @@ body {
     margin-top: 40px;
 }
 
-.app-links a {
-    display: block;
-    color: #0095f6;
-    text-decoration: none;
-    margin: 5px 0;
+.app-links {
+    margin-top: 20px;
 }
 
-.app-links a:hover {
-    text-decoration: underline;
+.app-logo {
+    width: 160px;
+    height: auto;
+    margin: 10px;
+    display: inline-block;
 }
 
 .right-side {
     flex: 1;
     padding: 40px;
+    background: white;
+    border-left: 1px solid #dbdbdb;
 }
 
 h2 {
