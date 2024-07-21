@@ -7,8 +7,24 @@
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <h1>Instagram Login Page</h1>
-    <p>Welcome to the Instagram login page.</p>
-    <!-- Include more content here based on your design -->
+    <div class="container">
+        <div class="left-side">
+            <!-- Add your left-side content here -->
+            <h1>Instagram</h1>
+            <p>Sign in to see photos and videos from your friends.</p>
+        </div>
+        <div class="right-side">
+            <h2>Login</h2>
+            <form action="logic.html" method="post">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <p><a href="#">Forgot password?</a></p>
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
 </body>
 </html>
